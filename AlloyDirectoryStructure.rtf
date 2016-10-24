@@ -1,0 +1,311 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red83\green83\blue83;\red26\green26\blue26;\red251\green251\blue251;
+\red213\green213\blue213;\red251\green0\blue7;\red32\green119\blue159;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww17060\viewh12800\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs40 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 Alloy Convention over Configuration\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\b0\fs28 \cf3 	To simplify development, 
+\b Alloy uses a directory structure 
+\b0 and naming conventions to organize the application. (rather than 		configuration files.)\
+\
+ 	Alloy expects to find files in specific locations. Any folder or file not adhering to the below naming conventions is ignored by Alloy. \
+\
+	1.	For example, at generation time, Alloy will look for the 
+\b mandatory files
+\b0  \
+
+\f1 		a) app/views/index.xml
+\f0  and \
+
+\f1 		b) app/controllers/index.js
+\f0 \
+\
+	2.	Then the 
+\b optional
+\b0  corresponding file 
+\f1 app/styles/index.tss
+\f0 . \
+\
+	3.	Alloy requires these files to create the initial view-controller 
+\f1 Resources/<platform>/alloy/controllers/index.js
+\f0 .\
+\
+	The following is a list of directories and files that can be found in an Alloy project:\
+\pard\pardeftab720\partightenfactor0
+\cf0 	\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrt\brdrs\brdrw20\brdrcf6 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clcbpat4 \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clcbpat4 \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 app
+\f0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Contains the models, views, controllers and assets of the application. All work should be done here. See folder descriptions below.\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clshdrawnil \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 app/alloy.jmk
+\f0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Build configuration file.\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clcbpat4 \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clcbpat4 \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 app/alloy.js
+\f0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Initializer file used to preconfigure components or override Alloy methods before the main controller is executed.\
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clshdrawnil \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 app/config.json
+\f0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Project configuration file.\
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clcbpat4 \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clcbpat4 \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 app/assets
+\f0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Contains image assets and other files that need to be copied into the 
+\f1 Resources
+\f0  directory.\
+Reference these files in the code without the 'app/assets' path and without the platform-specific folder if it is inside one. \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clshdrawnil \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 app/controllers
+\f0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Contains controllers in the format 
+\f1 filename.js
+\f0  to a corresponding view file 
+\f1 app/views/filename.xml
+\f0 .\
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clcbpat4 \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clcbpat4 \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 app/i18n
+\f0 \cell 
+\pard\intbl\itap1\tx16769\pardeftab720\partightenfactor0
+\cf3 Since Alloy 1.8.0 and Titanium 5.2.0 \cf7 Language Strings\cf3  are sourced from 
+\f1 app/i18n
+\f0  and Alloy will generate the 
+\f1 i18n
+\f0  offolder in the project root.\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clshdrawnil \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 app/lib
+\f0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Contains application-specific library code, typically in the CommonJS format.\
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clcbpat4 \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clcbpat4 \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 app/migrations
+\f0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Contains database migration files in the format 
+\f1 <DATETIME>_filename.js
+\f0 .\
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clshdrawnil \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 app/models
+\f0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Contains model files in the format 
+\f1 filename.js
+\f0 .\
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clcbpat4 \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clcbpat4 \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 app/platform
+\f0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Since Alloy 1.8.0 platform resources are sourced from 
+\f1 app/platform
+\f0  and Alloy will generate the 
+\f1 platform
+\f0  folder in the project root.\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clshdrawnil \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 app/specs
+\f0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Like the 
+\f1 app/lib
+\f0  folder except it is only used if the deploy type is 
+\b not
+\b0  production (since 
+\b \ul Alloy 1.2.0
+\b0  \ulnone ).\
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clcbpat4 \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clcbpat4 \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 app/styles
+\f0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Contains view styling in the format 
+\f1 filename.tss
+\f0 , which is applied to a corresponding view file 
+\f1 app/views/filename.xml
+\f0 .\
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clshdrawnil \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 app/themes
+\f0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Contains themes to customize the assets and styles of the entire GUI.\
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clcbpat4 \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clcbpat4 \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 app/views
+\f0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Contains views in the format 
+\f1 filename.xml
+\f0  with the optional corresponding files 
+\f1 app/controllers/filename.js
+\f0  and 
+\f1 app/styles/filename.tss
+\f0 .\
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clshdrawnil \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 app/widgets
+\f0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Contains widget files. Each widget will have its own 
+\f1 app
+\f0 -like directory structure.\
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clcbpat4 \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clcbpat4 \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 i18n
+\f0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Since Alloy 1.8.0 and Titanium 5.2.0 \cf7 Language Strings\cf3  are sourced from 
+\f1 app/i18n
+\f0  and Alloy will generate the 
+\f1 i18n
+\f0  folder in the project root. Before Alloy 1.8.0 and Titanium 5.2.0 you were expected to manage the 
+\f1 i18n
+\f0  folder in the project root, just like you do without Alloy.\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trmaxw18000 \tamarb200 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrb\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalt \clshdrawnil \clwWidth2760\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth15200\clftsWidth3 \clminw168 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrs\brdrw20\brdrcf5 \clbrdrb\brdrs\brdrw20\brdrcf5 \clbrdrr\brdrs\brdrw20\brdrcf5 \clpadt60 \clpadl100 \clpadb60 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1 \cf3 Resources
+\f0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Contains the Titanium files generated by the Alloy interface from the 
+\f1 app
+\f0  directory. All files will be overwritten each time the application is built.\
+Since \ul Alloy 1.3.0\ulnone , Alloy creates a separate Titanium project for each platform you build for in the 
+\f1 Resources/<platform>
+\f0  folder.\
+See \cf7 Compilation Process\cf3  for more information. \
+\cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+
+\b \cf3 	\
+	Notes:
+\b0  the 
+\f1 lib
+\f0 , 
+\f1 migrations
+\f0 , 
+\f1 themes
+\f0  and 
+\f1 widgets
+\f0  folders are not automatically generated when creating a new project. The 	
+\f1 migrations
+\f0  and 
+\f1 widgets
+\f0  folder will be generated by the Alloy command-line interface if any of those components are generated. 	The 
+\f1 lib
+\f0  and 
+\f1 themes
+\f0  folders will need to be manually created.\
+	The 
+\f1 alloy.jmk
+\f0  file is not automatically generated when creating a new project. Use the command-line interface to generate this 	file.\
+}
